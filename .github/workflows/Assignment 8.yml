@@ -16,5 +16,5 @@ jobs:
       - run: ls
       - run:    git rev-parse HEAD
       - run: mvn test-compile -pl . -am
-      - run:      mvn -pl . test -Dtest=com.authy.api.UserStatusTest#testToXML
-      - run:      mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=com.authy.api.UserStatusTest#testToXML -DnondexRuns=100
+      - run:      mvn -pl . test -Dtest=org.json.junit.JSONPointerTest#queryByEmptyKeySubObject
+      - run:      mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.json.junit.JSONPointerTest#queryByEmptyKeySubObject -DnondexRuns=10
